@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Features by role · NutriAksyon documentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 10a4 4 0 0 1 8 0M12 10l2-2"/></symbol>
+<symbol id="i-file" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7zM14 3v4h4M10 12h5M10 16h5"/></symbol>
+<symbol id="i-utensils" viewBox="0 0 24 24"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 2-2 6 0 8v10"/></symbol>
+<symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></symbol>
+<symbol id="i-image" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m5 17 5-4 4 3 2-2 3 3"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="6" y="11" width="12" height="9" rx="2"/><path d="M9 11V8a3 3 0 0 1 6 0v3"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="m4 8 8 6 8-6"/></symbol>
+</defs></svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">N</span>
+        <span class="brand-text"><strong>NutriAksyon</strong><small>DOCUMENTATION</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Documentation">
+        <a href="index.html">Overview</a>
+        <a href="features.html" class="active" aria-current="page">Features</a>
+        <a href="activity-diagram.html">Activity diagram</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero">
+      <p class="eyebrow"><span class="eyebrow-line"></span>FEATURES</p>
+      <h1>Features by role</h1>
+      <p class="lead">NutriAksyon is one system with four different front doors. Pick a role below to see what that role is responsible for, the sign-in screen it uses, and every module inside it.</p>
+      <hr class="rule">
+      <div class="role-tabs" role="tablist" aria-label="Roles"><button type="button" role="tab" id="tab-teacher" aria-controls="panel-teacher" aria-selected="true" data-tab="teacher"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-user"/></svg>Teacher</button><button type="button" role="tab" id="tab-coordinator" aria-controls="panel-coordinator" aria-selected="false" data-tab="coordinator"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-utensils"/></svg>Feeding Coordinator</button><button type="button" role="tab" id="tab-admin" aria-controls="panel-admin" aria-selected="false" data-tab="admin"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-gear"/></svg>Admin</button><button type="button" role="tab" id="tab-superadmin" aria-controls="panel-superadmin" aria-selected="false" data-tab="superadmin"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-shield"/></svg>SuperAdmin</button></div>
+    </section>
+
+    <section class="container roles">
+      <div role="tabpanel" id="panel-teacher" aria-labelledby="tab-teacher" class="panel">
+        <div class="role-head">
+          <span class="tile tile-lg"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-user"/></svg></span>
+          <div><h3>Teacher</h3><p class="role-meta">CLASS-LEVEL RECORDING · 5 MODULES</p></div>
+        </div>
+        <p class="role-desc">The teacher panel is the entry point of the whole system. It is limited to the adviser's own section, so the class list, the weighing sheet, and the reports all stay short and focused.</p>
+        <ul class="chips"><li>Dashboard, students, growth monitor, reports</li><li>Own section only</li><li>Class list import</li></ul>
+        <hr class="rule">
+        <div class="step-label"><strong>01 · LOGIN PAGE</strong><span>What the role sees before signing in</span></div>
+        <figure class="shot"><img src="assets/images/login-teacher.png" alt="Teacher login page" loading="lazy"></figure>
+        <div class="step-label"><strong>02 · DASHBOARD</strong><span>The first screen after a successful sign-in</span></div>
+        <figure class="shot"><img src="assets/images/login-teacher.png" alt="Teacher dashboard" loading="lazy"></figure>
+
+        <div class="step-label"><strong>03 · MODULE WALKTHROUGH</strong><span>Every section of this role panel, in the order it appears</span></div>
+        <div class="modules">
+          <article class="module">
+            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-grid"/></svg></span><div><small>3.1</small><h4>Dashboard</h4></div></div>
+            <p>A summary of the adviser's own section: how many learners are enrolled, how many qualified for the feeding program, how many were measured, and the attendance of the last feeding session.</p>
+            <ul class="checks inline"><li>Class-level counts only</li><li>Shortcuts to unmeasured learners</li><li>Latest feeding session status</li></ul>
+            <figure class="shot"><img src="assets/images/login-teacher.png" alt="Teacher dashboard with class summary" loading="lazy"></figure>
+          </article>
+          <article class="module">
+            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-user"/></svg></span><div><small>3.2</small><h4>Students</h4></div></div>
+            <p>Where the class list is imported. The system reads the uploaded list, computes each learner's BMI and height-for-age status, and automatically marks who qualifies for the feeding program. Qualified learners are listed in the table right after the import.</p>
+            <ul class="checks inline"><li>Import a class list in one step</li><li>Automatic qualification for the feeding program</li><li>Click a row to open the student profile</li></ul>
+            <figure class="shot"><img src="assets/images/login-teacher.png" alt="Imported class list table with qualified learners" loading="lazy"></figure>
+          </article>
+          <article class="module">
+            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-user"/></svg></span><div><small>3.3</small><h4>Student profile</h4></div></div>
+            <p>Opened by clicking any row in the students table. It shows the learner's BMI and HFA analysis for the current measurement, then the trend across every measurement recorded during the feeding program, including previous school years when those records exist.</p>
+            <ul class="checks inline"><li>BMI and HFA analysis side by side</li><li>Trend line across all measurements</li><li>Previous school years shown when available</li></ul>
+            <figure class="shot"><img src="assets/images/login-teacher.png" alt="Student profile with BMI, HFA and trend chart" loading="lazy"></figure>
+          </article>
+          <article class="module">
+            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-scale"/></svg></span><div><small>3.4</small><h4>Growth monitor</h4></div></div>
+            <p>The weighing sheet. The teacher enters the height and weight of each learner in the class and submits the batch. Once submitted, the measurements update the class table, the student profiles, and the reports.</p>
+            <ul class="checks inline"><li>Batch entry for the whole class</li><li>Validated before saving</li><li>Feeds every chart and report</li></ul>
+            <figure class="shot"><img src="assets/images/login-teacher.png" alt="Growth monitoring entry form for a class" loading="lazy"></figure>
+          </article>
+          <article class="module">
+            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-file"/></svg></span><div><small>3.5</small><h4>Reports</h4></div></div>
+            <p>Class monitoring in one place: who among the class falls under each BMI and HFA status, and whether the class actually attends the scheduled feeding sessions.</p>
+            <ul class="checks inline"><li>Status breakdown per learner</li><li>Feeding session attendance</li><li>Printable class summary</li></ul>
+            <figure class="shot"><img src="assets/images/login-teacher.png" alt="Teacher reports with status and attendance summary" loading="lazy"></figure>
+          </article>
+        </div>
+      </div>
+      <div role="tabpanel" id="panel-coordinator" aria-labelledby="tab-coordinator" class="panel" hidden>
+        <div class="role-head">
+          <span class="tile tile-lg"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-utensils"/></svg></span>
+          <div><h3>Feeding Coordinator</h3><p class="role-meta">SCHOOL-WIDE FEEDING PLANNING</p></div>
+        </div>
+        <p class="role-desc">The coordinator panel covers the whole school. It schedules feeding sessions and growth monitoring, plans meals from the crops in stock, and exports school-wide reports.</p>
+        <ul class="chips"><li>Whole school</li><li>Calendar, meals, crops, reports</li></ul>
+        <hr class="rule">
+        <div class="step-label"><strong>01 · LOGIN PAGE</strong><span>What the role sees before signing in</span></div>
+        <figure class="shot"><img src="assets/images/login-teacher.png" alt="Coordinator login page" loading="lazy"></figure>
+        <div class="soon">Dashboard and module walkthrough for this role will be added here.</div>
+      </div>
+      <div role="tabpanel" id="panel-admin" aria-labelledby="tab-admin" class="panel" hidden>
+        <div class="role-head">
+          <span class="tile tile-lg"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-gear"/></svg></span>
+          <div><h3>Admin</h3><p class="role-meta">ACCOUNTS &amp; SCHOOL SETUP</p></div>
+        </div>
+        <p class="role-desc">The admin panel manages who can use the system and how the school is organised. It creates and revokes teacher and coordinator accounts, maintains grade levels and sections, and manages the school year.</p>
+        <ul class="chips"><li>Whole school</li><li>Accounts, grade levels, sections, school year</li></ul>
+        <hr class="rule">
+        <div class="step-label"><strong>01 · LOGIN PAGE</strong><span>What the role sees before signing in</span></div>
+        <figure class="shot"><img src="assets/images/login-teacher.png" alt="Admin login page" loading="lazy"></figure>
+        <div class="soon">Dashboard and module walkthrough for this role will be added here.</div>
+      </div>
+      <div role="tabpanel" id="panel-superadmin" aria-labelledby="tab-superadmin" class="panel" hidden>
+        <div class="role-head">
+          <span class="tile tile-lg"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-shield"/></svg></span>
+          <div><h3>SuperAdmin</h3><p class="role-meta">SIGN-UP APPROVAL</p></div>
+        </div>
+        <p class="role-desc">The SuperAdmin panel is deliberately narrow. It only issues the sign-up tokens that admins need, so new admin accounts cannot be created without approval.</p>
+        <ul class="chips"><li>Accounts only</li><li>Token issuance</li></ul>
+        <hr class="rule">
+        <div class="step-label"><strong>01 · LOGIN PAGE</strong><span>What the role sees before signing in</span></div>
+        <figure class="shot"><img src="assets/images/login-teacher.png" alt="Superadmin login page" loading="lazy"></figure>
+        <div class="soon">Dashboard and module walkthrough for this role will be added here.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>NutriAksyon — School Nutrition Monitoring &amp; Feeding Program Management System</span>
+      <span class="ver">DOCUMENTATION V1.0</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
