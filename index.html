@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NutriAksyon documentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">N</span>
+        <span class="brand-text">
+          <strong>NutriAksyon</strong>
+          <small>DOCUMENTATION</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Documentation">
+        <a href="index.html" class="active" aria-current="page">Overview</a>
+        <a href="features.html">Features</a>
+        <a href="activity-diagram.html">Activity diagram</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="container hero">
+      <p class="eyebrow"><span class="eyebrow-line"></span>OVERVIEW</p>
+      <h1>NutriAksyon documentation</h1>
+      <p class="lead">School Nutrition Monitoring &amp; Feeding Program Management System. This site is the written and visual reference for the system: what it does, who uses it, the screens behind each role, and the flows that connect them.</p>
+
+      <dl class="meta">
+        <div><dt>PROJECT</dt><dd>Capstone project</dd></div>
+        <div><dt>USERS</dt><dd>4 role levels</dd></div>
+        <div><dt>DOCUMENTATION</dt><dd>Documentation v1.0</dd></div>
+      </dl>
+      <hr class="rule">
+
+      <div class="callout callout-green">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></svg>
+        <div>
+          <strong>How to read this documentation</strong>
+          <p>Start here for the purpose of the system, then open <a href="features.html">Features</a> to see the sign-in screens and modules of each role, and <a href="activity-diagram.html">Activity diagram</a> for the logic behind them.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What it does -->
+    <section class="container section">
+      <h2>What NutriAksyon does</h2>
+      <p class="sub">NutriAksyon is a web-based school nutrition monitoring and feeding program management system.</p>
+      <p>Schools already collect height and weight every year, but the results usually stay on paper. NutriAksyon keeps each measurement tied to a learner and a school year, computes the nutritional status right away, and shows whether a learner is improving across feeding cycles.</p>
+      <p>The same data drives the feeding program. Coordinators plan menus, schedule feeding sessions per section, and record attendance, so a menu is never planned separately from the learners it is meant for.</p>
+      <ul class="checks">
+        <li>Measurements are recorded once and reused across reports</li>
+        <li>Nutritional status is computed, not estimated</li>
+        <li>Menus and feeding sessions are linked to real sections</li>
+        <li>Every role sees only the data it needs</li>
+      </ul>
+      <hr class="rule">
+    </section>
+
+    <!-- Explore -->
+    <section class="container section">
+      <h2>Explore the documentation</h2>
+      <div class="cards-2">
+        <a class="card link-card" href="features.html">
+          <span class="tile"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 12h16M12 4v16"/></svg></span>
+          <span>
+            <strong>Features by role <em class="ext">&#8599;</em></strong>
+            <small>Sign-in screens and modules for all four roles.</small>
+          </span>
+        </a>
+        <a class="card link-card" href="activity-diagram.html">
+          <span class="tile"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><path d="M8 6h8M6 8v8M18 8v8M8 18h8"/></svg></span>
+          <span>
+            <strong>Activity diagram <em class="ext">&#8599;</em></strong>
+            <small>Four documented activity flows, one per major task.</small>
+          </span>
+        </a>
+      </div>
+      <hr class="rule">
+    </section>
+
+    <!-- Roles -->
+    <section class="container section">
+      <h2>User roles at a glance</h2>
+      <p class="sub">Four access levels, each with a different scope of data.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>ROLE</th><th>MAIN RESPONSIBILITY</th><th>ACCESS SCOPE</th></tr></thead>
+          <tbody>
+            <tr><td>Teacher</td><td>Imports the class list, records height and weight, follows each learner's BMI and HFA trend, and reports status and attendance.</td><td>Own class only</td></tr>
+            <tr><td>Feeding Coordinator</td><td>Schedules feeding sessions and growth monitoring, plans meals from available crops, and exports school-wide reports.</td><td>Whole school</td></tr>
+            <tr><td>Admin</td><td>Creates and revokes teacher and coordinator accounts, maintains grade levels and sections, and manages the school year.</td><td>Whole school</td></tr>
+            <tr><td>SuperAdmin</td><td>Issues the sign-up tokens that admins need, so new admin accounts cannot be created without approval.</td><td>Accounts only</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Modules -->
+    <section class="container section divided">
+      <h2>Core modules</h2>
+      <p class="sub">Six modules make up the first release of the system.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>MODULE</th><th>PURPOSE</th><th>PRIMARY ROLE</th></tr></thead>
+          <tbody>
+            <tr><td>Students</td><td>Class list import with automatic qualification, plus a per-learner BMI and HFA profile with trends.</td><td>Teacher / Coordinator</td></tr>
+            <tr><td>Growth monitoring</td><td>Height and weight entry per class, stored as the measurement history behind every chart.</td><td>Teacher</td></tr>
+            <tr><td>Calendar scheduling</td><td>Start feeding sessions and schedule the growth monitoring of each class.</td><td>Coordinator</td></tr>
+            <tr><td>Meal recommendation</td><td>Filter meals that can realistically be cooked from the crops currently in stock.</td><td>Coordinator</td></tr>
+            <tr><td>Crop inventory</td><td>Track school-farm crops, link them to meals, and estimate how many servings are possible.</td><td>Coordinator</td></tr>
+            <tr><td>Reports &amp; export</td><td>Status and feeding attendance monitoring with per-class and per-grade export.</td><td>Teacher / Coordinator</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Build -->
+    <section class="container section">
+      <h2>Build and structure</h2>
+      <div class="cards-4">
+        <div class="card stat"><small>FRONTEND</small><strong>React + TypeScript</strong></div>
+        <div class="card stat"><small>STYLING</small><strong>Tailwind CSS</strong></div>
+        <div class="card stat"><small>VISUALISATION</small><strong>Growth charts</strong></div>
+        <div class="card stat"><small>ACCESS MODEL</small><strong>4 role levels</strong></div>
+      </div>
+      <div class="callout callout-plain">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v.01M11 12h1v5h1"/></svg>
+        <p>Screens documented here follow the current build. When a module changes, update the matching page so the documentation and the system never drift apart.</p>
+      </div>
+    </section>
+
+    <!-- Pages -->
+    <section class="container section">
+      <h2>Pages in this documentation</h2>
+      <ul class="pages">
+        <li><a href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h6a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4zM20 5h-6a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h6z"/></svg>Overview</a></li>
+        <li><a href="features.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 12h16M12 4v16"/></svg>Features</a></li>
+        <li><a href="activity-diagram.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><path d="M8 6h8M6 8v8M18 8v8M8 18h8"/></svg>Activity diagram</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>NutriAksyon — School Nutrition Monitoring &amp; Feeding Program Management System</span>
+      <span class="ver">DOCUMENTATION V1.0</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
