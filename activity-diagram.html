@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Activity diagram · NutriAksyon documentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">N</span>
+        <span class="brand-text">
+          <strong>NutriAksyon</strong>
+          <small>DOCUMENTATION</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Documentation">
+        <a href="index.html">Overview</a>
+        <a href="features.html">Features</a>
+        <a href="activity-diagram.html" class="active" aria-current="page">Activity diagram</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero">
+      <p class="eyebrow"><span class="eyebrow-line"></span>SYSTEM DESIGN</p>
+      <h1>Activity diagram</h1>
+      <p class="lead">How the system behaves, flow by flow. Each diagram below follows one task from the role that starts it to the record the system keeps.</p>
+      <hr class="rule">
+    </section>
+
+    <!--
+      To use a real diagram: replace the <div class="placeholder"> inside a
+      figure with  <img src="assets/images/your-file.png" alt="...">
+    -->
+
+    <section class="container flow">
+      <span class="flow-num">01</span>
+      <h2>Student measurement</h2>
+      <p class="sub">The teacher enters the class' height and weight in the growth monitor; the system computes BMI and height-for-age and updates the student profile and reports.</p>
+      <figure class="diagram">
+        <div class="placeholder">
+          <span class="ph-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m5 17 5-4 4 3 2-2 3 3"/></svg></span>
+          <strong>SCREENSHOT PLACEHOLDER</strong>
+          <small>Activity diagram — student measurement flow</small>
+        </div>
+      </figure>
+    </section>
+
+    <section class="container flow">
+      <span class="flow-num">02</span>
+      <h2>Feeding session</h2>
+      <p class="sub">The coordinator schedules a session, picks a meal the available crops can support, and closes the day by marking attendance.</p>
+      <figure class="diagram">
+        <div class="placeholder">
+          <span class="ph-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m5 17 5-4 4 3 2-2 3 3"/></svg></span>
+          <strong>SCREENSHOT PLACEHOLDER</strong>
+          <small>Activity diagram — feeding session flow</small>
+        </div>
+      </figure>
+    </section>
+
+    <section class="container flow">
+      <span class="flow-num">03</span>
+      <h2>Account creation &amp; access</h2>
+      <p class="sub">The admin creates teacher and coordinator accounts, then allows or declines each access request before the account becomes active.</p>
+      <figure class="diagram">
+        <div class="placeholder">
+          <span class="ph-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m5 17 5-4 4 3 2-2 3 3"/></svg></span>
+          <strong>SCREENSHOT PLACEHOLDER</strong>
+          <small>Activity diagram — account creation and access flow</small>
+        </div>
+      </figure>
+    </section>
+
+    <section class="container flow">
+      <span class="flow-num">04</span>
+      <h2>Admin token issuance</h2>
+      <p class="sub">The SuperAdmin issues a single-use token that an admin must enter while signing up, so nobody can register as an admin on their own.</p>
+      <figure class="diagram">
+        <div class="placeholder">
+          <span class="ph-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m5 17 5-4 4 3 2-2 3 3"/></svg></span>
+          <strong>SCREENSHOT PLACEHOLDER</strong>
+          <small>Activity diagram — admin token issuance flow</small>
+        </div>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>NutriAksyon — School Nutrition Monitoring &amp; Feeding Program Management System</span>
+      <span class="ver">DOCUMENTATION V1.0</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
