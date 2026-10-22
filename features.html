@@ -56,41 +56,54 @@
         <ul class="chips"><li>Dashboard, students, growth monitor, reports</li><li>Own section only</li><li>Class list import</li></ul>
         <hr class="rule">
         <div class="step-label"><strong>01 · LOGIN PAGE</strong><span>What the role sees before signing in</span></div>
-        <figure class="shot"><img src="assets/images/login-teacher.png" alt="Teacher login page" loading="lazy"></figure>
-        <div class="step-label"><strong>02 · DASHBOARD</strong><span>The first screen after a successful sign-in</span></div>
-        <figure class="shot"><img src="assets/images/login-teacher.png" alt="Teacher dashboard" loading="lazy"></figure>
-
-        <div class="step-label"><strong>03 · MODULE WALKTHROUGH</strong><span>Every section of this role panel, in the order it appears</span></div>
+        <figure class="shot"><img src="assets/images/teacher/login.png" alt="Teacher login page" loading="lazy"></figure>
+        
+        <div class="step-label"><strong>02 · MODULE WALKTHROUGH</strong><span>Every section of this role panel, in the order it appears</span></div>
         <div class="modules">
           <article class="module">
-            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-grid"/></svg></span><div><small>3.1</small><h4>Dashboard</h4></div></div>
+            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-grid"/></svg></span><div><small>2.1</small><h4>Dashboard</h4></div></div>
             <p>A summary of the adviser's own section: how many learners are enrolled, how many qualified for the feeding program, how many were measured, and the attendance of the last feeding session.</p>
             <ul class="checks inline"><li>Class-level counts only</li><li>Shortcuts to unmeasured learners</li><li>Latest feeding session status</li></ul>
-            <figure class="shot"><img src="assets/images/login-teacher.png" alt="Teacher dashboard with class summary" loading="lazy"></figure>
+            <figure class="shot"><img src="assets/images/teacher/dashboard.png" alt="Teacher dashboard with class summary" loading="lazy"></figure>
+            <br><ul class="highlights inline"><li>When you click the 'question icon' in Students Card/Table, this shows criteria on how the system evaluates the students if they qualify for the feeding program or not.</li></ul>
+            <figure class="shot"><img src="assets/images/teacher/criteria.png" alt="Criteria for evaluating student qualification for the feeding program" loading="lazy"></figure>
+          </article>
+            <article class="module">
+              <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-user"/></svg></span><div><small>2.2</small><h4>Students</h4></div></div>
+              <p>Where the class list is imported. The system reads the uploaded list, computes each learner's BMI and height-for-age status, and automatically marks who qualifies for the feeding program. Qualified learners are listed in the table right after the import.</p>
+              <ul class="checks inline"><li>Import a class list in one step</li><li>Automatic qualification for the feeding program</li><li>Click a row to open the student profile</li></ul>
+              <figure class="shot"><img src="assets/images/teacher/students.png" alt="Imported class list table with qualified learners" loading="lazy"></figure>
+              <br><ul class="highlights inline"><li>Import Process</li></ul>
+              <figure class="shot">
+                <video controls preload="metadata" loading="lazy">
+                    <source src="assets/videos/import-students.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+            </figure>
+            <br><ul class="highlights inline"><li>Not Included Students - those who have BMI and HFA set as Normal, hence no need to include in feeding sessions.</li></ul>
+            <figure class="shot"><img src="assets/images/teacher/not-included.png" alt="Students who have normal BMI and HFA classifications" loading="lazy"></figure>
           </article>
           <article class="module">
-            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-user"/></svg></span><div><small>3.2</small><h4>Students</h4></div></div>
-            <p>Where the class list is imported. The system reads the uploaded list, computes each learner's BMI and height-for-age status, and automatically marks who qualifies for the feeding program. Qualified learners are listed in the table right after the import.</p>
-            <ul class="checks inline"><li>Import a class list in one step</li><li>Automatic qualification for the feeding program</li><li>Click a row to open the student profile</li></ul>
-            <figure class="shot"><img src="assets/images/login-teacher.png" alt="Imported class list table with qualified learners" loading="lazy"></figure>
-          </article>
-          <article class="module">
-            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-user"/></svg></span><div><small>3.3</small><h4>Student profile</h4></div></div>
+            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-user"/></svg></span><div><small>2.3</small><h4>Student profile</h4></div></div>
             <p>Opened by clicking any row in the students table. It shows the learner's BMI and HFA analysis for the current measurement, then the trend across every measurement recorded during the feeding program, including previous school years when those records exist.</p>
             <ul class="checks inline"><li>BMI and HFA analysis side by side</li><li>Trend line across all measurements</li><li>Previous school years shown when available</li></ul>
-            <figure class="shot"><img src="assets/images/login-teacher.png" alt="Student profile with BMI, HFA and trend chart" loading="lazy"></figure>
+            <figure class="shot"><img src="assets/images/teacher/student-profile.png" alt="Student profile with BMI, HFA and trend chart" loading="lazy"></figure>
           </article>
           <article class="module">
-            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-scale"/></svg></span><div><small>3.4</small><h4>Growth monitor</h4></div></div>
+            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-scale"/></svg></span><div><small>2.4</small><h4>Growth monitor</h4></div></div>
             <p>The weighing sheet. The teacher enters the height and weight of each learner in the class and submits the batch. Once submitted, the measurements update the class table, the student profiles, and the reports.</p>
             <ul class="checks inline"><li>Batch entry for the whole class</li><li>Validated before saving</li><li>Feeds every chart and report</li></ul>
-            <figure class="shot"><img src="assets/images/login-teacher.png" alt="Growth monitoring entry form for a class" loading="lazy"></figure>
+            <figure class="shot"><img src="assets/images/teacher/growth-monitor.png" alt="Growth monitoring entry form for a class" loading="lazy"></figure>
           </article>
           <article class="module">
-            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-file"/></svg></span><div><small>3.5</small><h4>Reports</h4></div></div>
+            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-file"/></svg></span><div><small>2.5</small><h4>Reports</h4></div></div>
             <p>Class monitoring in one place: who among the class falls under each BMI and HFA status, and whether the class actually attends the scheduled feeding sessions.</p>
-            <ul class="checks inline"><li>Status breakdown per learner</li><li>Feeding session attendance</li><li>Printable class summary</li></ul>
-            <figure class="shot"><img src="assets/images/login-teacher.png" alt="Teacher reports with status and attendance summary" loading="lazy"></figure>
+            <ul class="checks inline"><li>Nutritional Status Panel</li></ul>
+            <figure class="shot"><img src="assets/images/teacher/nutri-status.png" alt="Teacher reports with status and attendance summary" loading="lazy"></figure>
+            <br><ul class="checks inline"><li>Feeding Session Attendance Panel</li></ul>
+            <figure class="shot"><img src="assets/images/teacher/feeding-attendance.png" alt="Teacher reports with status and attendance summary" loading="lazy"></figure>
+            <br><ul class="highlights inline"><li>Upon clicking See Dates button</li></ul>
+            <figure class="shot"><img src="assets/images/teacher/see-dates.png" alt="Teacher reports with status and attendance summary" loading="lazy"></figure>
           </article>
         </div>
       </div>
@@ -103,7 +116,7 @@
         <ul class="chips"><li>Whole school</li><li>Calendar, meals, crops, reports</li></ul>
         <hr class="rule">
         <div class="step-label"><strong>01 · LOGIN PAGE</strong><span>What the role sees before signing in</span></div>
-        <figure class="shot"><img src="assets/images/login-teacher.png" alt="Coordinator login page" loading="lazy"></figure>
+        <figure class="shot"><img src="assets/images/coordinator/login.png" alt="Coordinator login page" loading="lazy"></figure>
         <div class="soon">Dashboard and module walkthrough for this role will be added here.</div>
       </div>
       <div role="tabpanel" id="panel-admin" aria-labelledby="tab-admin" class="panel" hidden>
