@@ -109,6 +109,34 @@ h2 { font-size: 22px; letter-spacing: -0.015em; margin: 8px 0 6px; font-weight: 
   transform: rotate(-45deg);
 }
 
+/* Custom bullet list */
+.highlights {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 40px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.highlights li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.highlights li::before {
+  content: "‣";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  color: var(--green-ink);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
 /* Cards */
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
 .cards-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 18px; }
@@ -204,7 +232,7 @@ html { scroll-padding-top: 76px; }
 .module-head small { display: block; font-size: 10.5px; letter-spacing: .1em; color: var(--muted); }
 .module-head h4 { margin: 0; font-size: 16px; font-weight: 600; line-height: 1.3; }
 .module > p { margin: 0 0 12px; font-size: 13.5px; color: var(--muted); max-width: 860px; }
-.checks.inline { display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 0 0 16px; }
+.checks.inline, .highlights.inline { display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 0 0 16px; }
 .shot { margin: 0; }
 .shot img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
 .soon { margin-top: 28px; padding: 28px; border: 1px dashed var(--line); border-radius: var(--radius); background: var(--bg-soft); color: var(--muted); font-size: 13px; text-align: center; }
@@ -221,7 +249,7 @@ html { scroll-padding-top: 76px; }
 /* Responsive */
 @media (max-width: 760px) {
   h1 { font-size: 28px; }
-  .cards-2, .checks { grid-template-columns: 1fr; }
+  .cards-2, .checks, .highlights { grid-template-columns: 1fr; }
   .cards-4 { grid-template-columns: 1fr 1fr; }
   .header-inner { height: auto; padding: 10px 24px; flex-wrap: wrap; gap: 8px; }
   .main-nav { flex-wrap: wrap; }
@@ -229,4 +257,11 @@ html { scroll-padding-top: 76px; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
+}
+
+.shot video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
 }
