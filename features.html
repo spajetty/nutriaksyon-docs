@@ -112,12 +112,93 @@
           <span class="tile tile-lg"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-utensils"/></svg></span>
           <div><h3>Feeding Coordinator</h3><p class="role-meta">SCHOOL-WIDE FEEDING PLANNING</p></div>
         </div>
-        <p class="role-desc">The coordinator panel covers the whole school. It schedules feeding sessions and growth monitoring, plans meals from the crops in stock, and exports school-wide reports.</p>
-        <ul class="chips"><li>Whole school</li><li>Calendar, meals, crops, reports</li></ul>
+        <p class="role-desc">The coordinator panel sits between the classroom and the administration. It owns the feeding calendar, reads measurement data across all sections, and turns the school's available crops into meals that can actually be served.</p>
+        <ul class="chips"><li>Calendar, students, meals, crops, reports</li><li>All sections</li><li>Export and crop-based menus</li></ul>
         <hr class="rule">
         <div class="step-label"><strong>01 · LOGIN PAGE</strong><span>What the role sees before signing in</span></div>
         <figure class="shot"><img src="assets/images/coordinator/login.png" alt="Coordinator login page" loading="lazy"></figure>
-        <div class="soon">Dashboard and module walkthrough for this role will be added here.</div>
+        <div class="step-label"><strong>02 · MODULE WALKTHROUGH</strong><span>Every section of this role panel, in the order it appears</span></div>
+        <div class="modules">
+          <article class="module">
+            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-grid"/></svg></span><div><small>2.1</small><h4>Dashboard</h4></div></div>
+            <p>The coordinator's command view: upcoming sessions across all sections, how much produce is available from the school farm, and which classes still need a scheduled growth monitoring date.</p>
+            <ul class="checks inline"><li>School-wide session list</li><li>Crop availability at a glance</li><li>Unscheduled classes flagged</li></ul>
+            <figure class="shot"><img src="assets/images/coordinator/dashboard.png" alt="Coordinator dashboard with session summary" loading="lazy"></figure>
+          </article>
+          <article class="module">
+            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-user"/></svg></span><div><small>2.2</small><h4>Calendar Scheduling</h4></div></div>
+            <p>Where the feeding program is actually run. The coordinator starts a feeding session for a section and schedules the growth monitoring date of each class; that scheduled date is what appears in the teacher's growth monitor menu.</p>
+            <ul class="checks inline"><li>Start and close feeding sessions</li><li>Schedule growth monitoring per class</li><li>Scheduled dates appear in the teacher panel</li></ul>
+            <figure class="shot"><img src="assets/images/coordinator/calendar.png" alt="Calendar Scheduling menu" loading="lazy"></figure>
+            <br><ul class="highlights inline"><li>Start Feeding Session for Today</li></ul>
+            <figure class="shot">
+              <video controls preload="metadata" loading="lazy">
+                <source src="assets/videos/feeding-session.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+              </video>
+            </figure>
+            <br><ul class="highlights inline"><li><strong><em>Past Feeding Sessions</em></strong> - cannot save changes to prohibit bias, prompts feeding coors to double-check the attendance before submitting.</li></ul>
+            <figure class="shot"><img src="assets/images/coordinator/past-feeding-session.png" alt="Past Feeding Session" loading="lazy"></figure>
+            <br><ul class="highlights inline"><li><strong><em>Schedule Growth Monitoring</em></strong> - displays modal that asks for date, batch, and grade/section to be scheduled upon.</li></ul>
+            <figure class="shot">
+              <video controls preload="metadata" loading="lazy">
+                <source src="assets/videos/new-weighins.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+              </video>
+            </figure>
+            <br><ul class="highlights inline"><li><strong><em>View Existing Growth Monitorings</em></strong> - displays modal that shows a table of lists of students weighed-in per grade/section.</li></ul>
+            <figure class="shot">
+              <video controls preload="metadata" loading="lazy">
+                <source src="assets/videos/existing-weighins.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+              </video>
+            </figure>
+          </article>
+          <article class="module">
+            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-user"/></svg></span><div><small>2.3</small><h4>Students Table</h4></div></div>
+            <p>A read-only view of every learner in the school. The coordinator does not edit records here; the table is built for filtering, so a section, a BMI status, or an HFA status can be isolated in one click.</p>
+            <ul class="checks inline"><li>All learners, all sections</li><li>Filter by class</li><li>Filter by BMI and HFA status</li></ul>
+            <figure class="shot"><img src="assets/images/coordinator/students.png" alt="Student profile with BMI, HFA and Grade filters" loading="lazy"></figure>
+          </article>
+          <article class="module">
+            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-scale"/></svg></span><div><small>2.4</small><h4>Meal Recommendation</h4></div></div>
+            <p>Meals are decided by the coordinator. Crops are chosen here as the basis of the menu, and the list narrows to meals that are both available and realistically cookable with what the school currently has.</p>
+            <ul class="checks inline"><li>Batch entry for the whole classSelect the crops to cook with</li><li>Only feasible meals are listed</li><li>Menu is saved to the feeding cycle</li></ul>
+            <figure class="shot">
+              <video controls preload="metadata" loading="lazy">
+                <source src="assets/videos/meal-reco-process.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+              </video>
+            </figure>
+          </article>
+          <article class="module">
+            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-scale"/></svg></span><div><small>2.4</small><h4>Crop inventory</h4></div></div>
+            <p>Schools with a farm can keep their harvest here. Every crop recorded is linked automatically to the meal recommendation menu, so unavailable meals disappear from the list, and the system estimates how many servings of a dish the current stock can produce.</p> 
+            <ul class="checks inline"><li>Track crops and harvest quantities</li><li>Linked directly to meal recommendation</li><li>Estimated servings per dish</li></ul>
+            <figure class="shot"><img src="assets/images/coordinator/crops.png" alt="Growth monitoring entry form for a class" loading="lazy"></figure>
+            <br><ul class="highlights inline"><li><strong><em>Add Crop/s</em></strong> - select/add new crops and input how much to store in kg</li></ul>
+            <figure class="shot"><img src="assets/images/coordinator/add-crop.png" alt="Add crops" loading="lazy"></figure>
+            <br><ul class="highlights inline"><li><strong><em>See Dates button</em></strong> - display modal to view: [1] Harvest Logs; [2] Usage Logs; [3] Expired Logs</li></ul>
+            <figure class="shot"><img src="assets/images/coordinator/see-dates-crops.png" alt="See Dates button for crops" loading="lazy"></figure>
+          </article>
+          <article class="module">
+            <div class="module-head"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-file"/></svg></span><div><small>2.5</small><h4>Reports</h4></div></div>
+            <p>The same status and attendance monitoring the teacher sees, but across every class. It also carries the export: the weigh-ins set by the coordinator and all student statuses can be exported and filtered per class or grade level.</p>
+            <ul class="checks inline"><li>Nutritional Status Panel</li></ul>
+            <figure class="shot"><img src="assets/images/coordinator/nutri-status.png" alt="Teacher reports with status and attendance summary" loading="lazy"></figure>
+            <br><ul class="checks inline"><li>Feeding Session Attendance Panel</li></ul>
+            <figure class="shot"><img src="assets/images/coordinator/feeding-attend.png" alt="Teacher reports with status and attendance summary" loading="lazy"></figure>
+            <br><ul class="highlights inline"><li>Upon clicking See Dates button</li></ul>
+            <figure class="shot"><img src="assets/images/coordinator/see-dates.png" alt="Teacher reports with status and attendance summary" loading="lazy"></figure>
+            <br><ul class="checks inline"><li>Export Center Panel</li></ul>
+            <figure class="shot">
+              <video controls preload="metadata" loading="lazy">
+                <source src="assets/videos/export-process.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+              </video>
+            </figure>
+          </article>
+        </div>
       </div>
       <div role="tabpanel" id="panel-admin" aria-labelledby="tab-admin" class="panel" hidden>
         <div class="role-head">
