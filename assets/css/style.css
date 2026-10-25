@@ -265,3 +265,30 @@ html { scroll-padding-top: 76px; }
     height: auto;
     border-radius: inherit;
 }
+
+.repo-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 9px 13px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.repo-link svg {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+}
+
+.repo-link:hover {
+    background: var(--surface);
+    border-color: var(--text);
+}
