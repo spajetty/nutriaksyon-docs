@@ -32,7 +32,9 @@
     <section class="container hero">
       <p class="eyebrow"><span class="eyebrow-line"></span>SYSTEM DESIGN</p>
       <h1>Activity diagram</h1>
-      <p class="lead">How the system behaves, flow by flow. Each diagram below follows one task from the role that starts it to the record the system keeps.</p>
+      <p class="lead">
+        How the system behaves, flow by flow. Each diagram below follows one task from the role that starts it to the record the system keeps.
+      </p>
       <hr class="rule">
     </section>
 
@@ -43,53 +45,49 @@
 
     <section class="container flow">
       <span class="flow-num">01</span>
-      <h2>Student measurement</h2>
-      <p class="sub">The teacher enters the class' height and weight in the growth monitor; the system computes BMI and height-for-age and updates the student profile and reports.</p>
+      <strong><em><h2>USER LOG-IN</h2></em></strong>
       <figure class="diagram">
-        <div class="placeholder">
-          <span class="ph-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m5 17 5-4 4 3 2-2 3 3"/></svg></span>
-          <strong>SCREENSHOT PLACEHOLDER</strong>
-          <small>Activity diagram — student measurement flow</small>
-        </div>
+        <img src="assets/images/act-diagram/user-login.png" alt="User log-in" loading="lazy">
       </figure>
     </section>
 
     <section class="container flow">
       <span class="flow-num">02</span>
-      <h2>Feeding session</h2>
-      <p class="sub">The coordinator schedules a session, picks a meal the available crops can support, and closes the day by marking attendance.</p>
+      <strong><em><h2>NUTRIAKSYON FLOW</h2></em></strong>
       <figure class="diagram">
-        <div class="placeholder">
-          <span class="ph-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m5 17 5-4 4 3 2-2 3 3"/></svg></span>
-          <strong>SCREENSHOT PLACEHOLDER</strong>
-          <small>Activity diagram — feeding session flow</small>
-        </div>
+        <img src="assets/images/act-diagram/nutriaksyon-process.png" alt="NutriAksyon Process" loading="lazy">
       </figure>
     </section>
 
     <section class="container flow">
       <span class="flow-num">03</span>
-      <h2>Account creation &amp; access</h2>
-      <p class="sub">The admin creates teacher and coordinator accounts, then allows or declines each access request before the account becomes active.</p>
+      <strong><em><h2>TEACHER</h2></em></strong>
       <figure class="diagram">
-        <div class="placeholder">
-          <span class="ph-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m5 17 5-4 4 3 2-2 3 3"/></svg></span>
-          <strong>SCREENSHOT PLACEHOLDER</strong>
-          <small>Activity diagram — account creation and access flow</small>
-        </div>
+        <img src="assets/images/act-diagram/teacher-process.png" alt="Teacher Process" loading="lazy">
       </figure>
     </section>
 
     <section class="container flow">
       <span class="flow-num">04</span>
-      <h2>Admin token issuance</h2>
-      <p class="sub">The SuperAdmin issues a single-use token that an admin must enter while signing up, so nobody can register as an admin on their own.</p>
+      <strong><em><h2>FEEDING COORDINATOR</h2></em></strong>
       <figure class="diagram">
-        <div class="placeholder">
-          <span class="ph-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m5 17 5-4 4 3 2-2 3 3"/></svg></span>
-          <strong>SCREENSHOT PLACEHOLDER</strong>
-          <small>Activity diagram — admin token issuance flow</small>
-        </div>
+        <img src="assets/images/act-diagram/coor-process.png" alt="Feeding Coordinator Process" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="container flow">
+      <span class="flow-num">05</span>
+      <strong><em><h2>ADMINISTRATOR</h2></em></strong>
+      <figure class="diagram">
+        <img src="assets/images/act-diagram/admin-process.png" alt="Admin process" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="container flow">
+      <span class="flow-num">06</span>
+      <strong><em><h2>SUPERADMIN</h2></em></strong>
+      <figure class="diagram">
+        <img src="assets/images/act-diagram/superadmin-process.png" alt="Superadmin process" loading="lazy">
       </figure>
     </section>
   </main>
